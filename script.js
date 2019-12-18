@@ -30,11 +30,6 @@ var mode15 = especial+ especial+ especial+ especial;
 var maxlenght= 128;
 var passwordf= "";
 
-function getmode12(){
-  return UPPER[Math.floor(Math.random() * UPPER.length)]+UPPER[Math.floor(Math.random() * UPPER.length)]+
-         UPPER[Math.floor(Math.random() * UPPER.length)]+UPPER[Math.floor(Math.random() * UPPER.length)];
-
-}
 
 function getRamdomUPPER(){
 return UPPER[Math.floor(Math.random() * UPPER.length)];
@@ -63,153 +58,175 @@ generateBtn.addEventListener("click", function () {
 
  if ( UPPERdata === true && lowerData === true && numberData === true && symbolData === true) {
   
-  var passwordf= mode1;
-  
-  var passwordfinal= passwordf.repeat(32);
-  
-  console.log(passwordfinal);
+  for (var i=0 ; i <= Passwordlenght; i++){
 
-  var pnumero =  passwordfinal.substring(0, Passwordlenght);
+    var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+lower[Math.floor(Math.random()*lower.length)]+number[Math.floor(Math.random()*number.length)]+special[Math.floor(Math.random()*special.length)];
 
-  console.log(pnumero);
-  
+  }
+        
+      console.log(passwordf)
+        var pnumero =  passwordf.substring(0, Passwordlenght);
+      
+        console.log(pnumero);
+    
         
   } else if (UPPERdata === true && lowerData === true && numberData === true && symbolData === false) {
   
-  var passwordf= mode2;
-  
-  var passwordfinal= passwordf.repeat(32);
-  
-  console.log(passwordfinal);
+    for (var i=0 ; i <= Passwordlenght; i++){
 
-  var pnumero =  passwordfinal.substring(0, Passwordlenght);
+      var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+lower[Math.floor(Math.random()*lower.length)]+number[Math.floor(Math.random()*number.length)];
 
-  console.log(pnumero);
+    }
+         
+          
+       
+        console.log(passwordf)
+          var pnumero =  passwordf.substring(0, Passwordlenght);
+        
+          console.log(pnumero);
+      
   
 
   } else if ( UPPERdata === true && lowerData === true && numberData === false && symbolData === true) {
   
-      var passwordf= mode3;
-      
-      var passwordfinal= passwordf.repeat(32);
-      
-      console.log(passwordfinal);
-    
-      var pnumero =  passwordfinal.substring(0, Passwordlenght);
-    
-      console.log(pnumero);
+    for (var i=0 ; i <= Passwordlenght; i++){
+
+      var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+lower[Math.floor(Math.random()*lower.length)]+special[Math.floor(Math.random()*special.length)];
+
+    }
+         
+          
+       
+        console.log(passwordf)
+          var pnumero =  passwordf.substring(0, Passwordlenght);
+        
+          console.log(pnumero);
       
             
   } else if (UPPERdata === true && lowerData === false && numberData === true && symbolData === true) {
       
-      var passwordf= mode4;
+    for (var i=0 ; i <= Passwordlenght; i++){
+
+      var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+number[Math.floor(Math.random()*number.length)]+special[Math.floor(Math.random()*special.length)];
+
+    }
+         
+          
+       
+        console.log(passwordf)
+          var pnumero =  passwordf.substring(0, Passwordlenght);
+        
+          console.log(pnumero);
       
-      var passwordfinal= passwordf.repeat(32);
-      
-      console.log(passwordfinal);
-    
-      var pnumero =  passwordfinal.substring(0, Passwordlenght);
-    
-      console.log(pnumero);
       
   } else if (UPPERdata === false && lowerData === true && numberData === true && symbolData === true) {
-  
-      var passwordf= mode5;
-      
-      var passwordfinal= passwordf.repeat(32);
-      
-      console.log(passwordfinal);
-    
-      var pnumero =  passwordfinal.substring(0, Passwordlenght);
-    
-      console.log(pnumero);
+    for (var i=0 ; i <= Passwordlenght; i++){
+
+      var passwordf= passwordf+lower[Math.floor(Math.random()*lower.length)]+number[Math.floor(Math.random()*number.length)]+special[Math.floor(Math.random()*special.length)];
+
+    }
+         
+          
+       
+        console.log(passwordf)
+          var pnumero =  passwordf.substring(0, Passwordlenght);
+        
+          console.log(pnumero);
       
     
   } else if ( UPPERdata === true && lowerData === true && numberData === false && symbolData === false) {
       
-          var passwordf= mode6;
+    for (var i=0 ; i <= Passwordlenght; i++){
+
+      var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+lower[Math.floor(Math.random()*lower.length)];
+
+    }
+         
           
-          var passwordfinal= passwordf.repeat(32);
-          
-          console.log(passwordfinal);
-        
-          var pnumero =  passwordfinal.substring(0, Passwordlenght);
+       
+        console.log(passwordf)
+          var pnumero =  passwordf.substring(0, Passwordlenght);
         
           console.log(pnumero);
           
                 
   } else if (UPPERdata === true && lowerData === false && numberData === true && symbolData === false) {
           
-          var passwordf= mode7;
+    for (var i=0 ; i <= Passwordlenght; i++){
+
+      var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+number[Math.floor(Math.random()*number.length)];
+
+    }
+         
           
-          var passwordfinal= passwordf.repeat(32);
-          
-          console.log(passwordfinal);
-        
-          var pnumero =  passwordfinal.substring(0, Passwordlenght);
+       
+        console.log(passwordf)
+          var pnumero =  passwordf.substring(0, Passwordlenght);
         
           console.log(pnumero);
           
   } else if (UPPERdata === true && lowerData === false && numberData === false && symbolData === true) {
       
-          var passwordf= mode8;
+    for (var i=0 ; i <= Passwordlenght; i++){
+
+      var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+special[Math.floor(Math.random()*special.length)];
+
+    }
+         
           
-          var passwordfinal= passwordf.repeat(32);
-          
-          console.log(passwordfinal);
-        
-          var pnumero =  passwordfinal.substring(0, Passwordlenght);
+       
+        console.log(passwordf)
+          var pnumero =  passwordf.substring(0, Passwordlenght);
         
           console.log(pnumero);
           
   } else if (UPPERdata === false && lowerData === true && numberData === true && symbolData === false) {
       
-          var passwordf= mode9;
+    for (var i=0 ; i <= Passwordlenght; i++){
+
+      var passwordf= passwordf+lower[Math.floor(Math.random()*lower.length)]+number[Math.floor(Math.random()*number.length)];
+
+    }
+         
           
-          var passwordfinal= passwordf.repeat(32);
-          
-          console.log(passwordfinal);
-        
-          var pnumero =  passwordfinal.substring(0, Passwordlenght);
+       
+        console.log(passwordf)
+          var pnumero =  passwordf.substring(0, Passwordlenght);
         
           console.log(pnumero);
-          
         
   } else if ( UPPERdata === false && lowerData === true && numberData === false && symbolData === true) {
           
-              var passwordf= mode10;
-              
-              var passwordfinal= passwordf.repeat(32);
-              
-              console.log(passwordfinal);
-            
-              var pnumero =  passwordfinal.substring(0, Passwordlenght);
-            
-              console.log(pnumero);
-              
+    for (var i=0 ; i <= Passwordlenght; i++){
+
+      var passwordf= passwordf+lower[Math.floor(Math.random()*lower.length)]+special[Math.floor(Math.random()*special.length)];
+
+    }
+         
+          
+       
+        console.log(passwordf)
+          var pnumero =  passwordf.substring(0, Passwordlenght);
+        
+          console.log(pnumero);
                     
   } else if (UPPERdata === false && lowerData === false && numberData === true && symbolData === true) {
               
-              var passwordf= mode11;
-              
-              var passwordfinal= passwordf.repeat(32);
-              
-              console.log(passwordfinal);
-            
-              var pnumero =  passwordfinal.substring(0, Passwordlenght);
-            
-              console.log(pnumero);
+    for (var i=0 ; i <= Passwordlenght; i++){
+
+      var passwordf= passwordf+number[Math.floor(Math.random()*number.length)]+special[Math.floor(Math.random()*special.length)];
+
+    }
+        console.log(passwordf)
+          var pnumero =  passwordf.substring(0, Passwordlenght);
+        
+          console.log(pnumero);
   } else if (UPPERdata === true && lowerData === false && numberData === false && symbolData === false) {
         for (var i=0 ; i <= Passwordlenght; i++){
 
-          var passwordf= passwordf+(UPPER[Math.floor(Math.random()*UPPER.length-1)]);
+          var passwordf= passwordf+(UPPER[Math.floor(Math.random()*UPPER.length)]);
 
         }
-             
-              
-              // var passwordfinal= passwordf.repeat(32);
-              
-              // console.log(passwordfinal);
             console.log(passwordf)
               var pnumero =  passwordf.substring(0, Passwordlenght);
             
@@ -217,42 +234,45 @@ generateBtn.addEventListener("click", function () {
               
   } else if (UPPERdata === false && lowerData === true && numberData === false && symbolData === false) {
           
-              var passwordf= mode13;
-              
-              var passwordfinal= passwordf.repeat(32);
-              
-              console.log(passwordfinal);
-            
-              var pnumero =  passwordfinal.substring(0, Passwordlenght);
-            
-              console.log(pnumero);
-              
+    for (var i=0 ; i <= Passwordlenght; i++){
+
+      var passwordf= passwordf+lower[Math.floor(Math.random()*lower.length)];
+
+    }
+         
+          
+       
+        console.log(passwordf)
+          var pnumero =  passwordf.substring(0, Passwordlenght);
+        
+          console.log(pnumero);
             
   } else if ( UPPERdata === false && lowerData === false && numberData === true && symbolData === false) {
               
-                  var passwordf= mode14;
-                  
-                  var passwordfinal= passwordf.repeat(32);
-                  
-                  console.log(passwordfinal);
-                
-                  var pnumero =  passwordfinal.substring(0, Passwordlenght);
-                
-                  console.log(pnumero);
-                  
-                        
+    for (var i=0 ; i <= Passwordlenght; i++){
+
+      var passwordf= passwordf+number[Math.floor(Math.random()*number.length)];
+
+    }
+        console.log(passwordf)
+          var pnumero =  passwordf.substring(0, Passwordlenght);
+        
+          console.log(pnumero);
          
   } else if  (UPPERdata === false && lowerData === false && numberData === false && symbolData === true) {
                   
-        var passwordf= mode15;
+    for (var i=0 ; i <= Passwordlenght; i++){
+
+      var passwordf= passwordf+special[Math.floor(Math.random()*special.length)];
+
+    }
+         
+          
+       
+        console.log(passwordf)
+          var pnumero =  passwordf.substring(0, Passwordlenght);
         
-        var passwordfinal= passwordf.repeat(32);
-        
-        console.log(passwordfinal);
-      
-        var pnumero =  passwordfinal.substring(0, Passwordlenght);
-      
-        console.log(pnumero);
+          console.log(pnumero);
   } else {
 
       alert("no password");
