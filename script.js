@@ -9,7 +9,7 @@ var lowerData = confirm("do you want lower case");
 var numberData = confirm("do you want numbers");
 var symbolData= confirm("do you want special characteres?");
 var passwordf= "";
-var display = document.getElementById("password").placeholder;
+var display = document.querySelector("#password");
 
 
 function getRamdomUPPER(){
@@ -49,6 +49,7 @@ generateBtn.addEventListener("click", function () {
         var pnumero =  passwordf.substring(0, Passwordlenght);
       
         console.log(pnumero);
+      display.textContent=pnumero;
     
         
   } else if (UPPERdata === true  && lowerData === true  && numberData === true  && symbolData === false) {
@@ -65,7 +66,7 @@ generateBtn.addEventListener("click", function () {
           var pnumero =  passwordf.substring(0, Passwordlenght);
         
           console.log(pnumero);
-      
+          display.textContent=pnumero;
   
 
   } else if (UPPERdata === true  && lowerData === true  && numberData === false && symbolData === true) {
@@ -82,7 +83,7 @@ generateBtn.addEventListener("click", function () {
           var pnumero =  passwordf.substring(0, Passwordlenght);
         
           console.log(pnumero);
-      
+          display.textContent=pnumero;
             
   } else if (UPPERdata === true  && lowerData === false && numberData === true  && symbolData === true) {
       
@@ -98,7 +99,7 @@ generateBtn.addEventListener("click", function () {
           var pnumero =  passwordf.substring(0, Passwordlenght);
         
           console.log(pnumero);
-      
+          display.textContent=pnumero;
       
   } else if (UPPERdata === false && lowerData === true  && numberData === true  && symbolData === true) {
     for (var i=0 ; i <= Passwordlenght; i++){
@@ -113,7 +114,7 @@ generateBtn.addEventListener("click", function () {
           var pnumero =  passwordf.substring(0, Passwordlenght);
         
           console.log(pnumero);
-      
+          display.textContent=pnumero;
     
   } else if (UPPERdata === true  && lowerData === true  && numberData === false && symbolData === false) {
       
@@ -129,7 +130,7 @@ generateBtn.addEventListener("click", function () {
           var pnumero =  passwordf.substring(0, Passwordlenght);
         
           console.log(pnumero);
-          
+          display.textContent=pnumero; 
                 
   } else if (UPPERdata === true  && lowerData === false && numberData === true  && symbolData === false) {
           
@@ -138,13 +139,11 @@ generateBtn.addEventListener("click", function () {
       var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+number[Math.floor(Math.random()*number.length)];
 
     }
-         
-          
-       
-        console.log(passwordf)
+         console.log(passwordf)
           var pnumero =  passwordf.substring(0, Passwordlenght);
         
           console.log(pnumero);
+          display.textContent=pnumero;
           
   } else if (UPPERdata === true  && lowerData === false && numberData === false && symbolData === true) {
       
@@ -153,13 +152,13 @@ generateBtn.addEventListener("click", function () {
       var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+special[Math.floor(Math.random()*special.length)];
 
     }
-         
-          
-       
+      
         console.log(passwordf)
           var pnumero =  passwordf.substring(0, Passwordlenght);
         
           console.log(pnumero);
+
+          display.textContent=pnumero;
           
   } else if (UPPERdata === false && lowerData === true  && numberData === true  && symbolData === false) {
       
@@ -183,13 +182,13 @@ generateBtn.addEventListener("click", function () {
       var passwordf= passwordf+lower[Math.floor(Math.random()*lower.length)]+special[Math.floor(Math.random()*special.length)];
 
     }
-         
-          
-       
+      
         console.log(passwordf)
           var pnumero =  passwordf.substring(0, Passwordlenght);
         
           console.log(pnumero);
+
+          display.textContent=pnumero;
                     
   } else if (UPPERdata === false && lowerData === false && numberData === true  && symbolData === true) {
               
@@ -202,6 +201,9 @@ generateBtn.addEventListener("click", function () {
           var pnumero =  passwordf.substring(0, Passwordlenght);
         
           console.log(pnumero);
+
+          display.textContent=pnumero;
+
   } else if (UPPERdata === true  && lowerData === false && numberData === false && symbolData === false) {
         for (var i=0 ; i <= Passwordlenght; i++){
 
@@ -212,6 +214,9 @@ generateBtn.addEventListener("click", function () {
               var pnumero =  passwordf.substring(0, Passwordlenght);
             
               console.log(pnumero);
+
+            
+          display.textContent=pnumero;  
               
   } else if (UPPERdata === false && lowerData === true  && numberData === false && symbolData === false) {
           
@@ -258,7 +263,7 @@ generateBtn.addEventListener("click", function () {
 
       alert("no password");
       console.log("no password");
-      var display=12345;
+      display.textContent=12345;
   };
 
   
