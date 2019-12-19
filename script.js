@@ -20,17 +20,12 @@ var display = document.querySelector("#password");
       var numberData = confirm("do you want numbers?");
       var symbolData= confirm("do you want special characteres?");
 
-      
-
-
     } else {
 
       alert("wrong entry");
 
     }
-
-
-      var passwordf="";
+   var passwordf="";
 
     if ( UPPERdata === true && lowerData === true && numberData === true && symbolData === true) {
   
