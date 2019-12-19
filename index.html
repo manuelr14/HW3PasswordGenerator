@@ -7,7 +7,12 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <style>
+@media screen and (min-width: 600px) {
+  class.reco {
+  max-width:200px;
 
+  }
+}
          body { 
            background-image:url(http://1.bp.blogspot.com/-_yDZVv9RWHk/VhmWxj2vL4I/AAAAAAAAAbo/FEeK86rxuvA/s1600/Matrix-code-gif.gif)             } 
         </style>
@@ -15,10 +20,10 @@
   </head>
   <body>
     <header>
-      <h1 style="text-align: center; margin-top: 140px; color:whitesmoke;">Password Generator</h1>
+      <h1 style="text-align: center;background-color: black; margin-top: 80px; color:whitesmoke;">Password Generator</h1>
     </header>
 <div class="container" style="max-width: 500px; max-height: 500px;
-    border:solid; border-width: 5px; border-color:grey; margin-top:40px; background:black;border-style: groove;
+    border:solid; border-width: 5px; border-color:grey; margin-top:10px; background:black;border-style: groove;
     border-radius: 15px;">
     <h2 style="text-align: center; margin: 25px; color:firebrick">Generate a Password</h2>
    
@@ -27,7 +32,8 @@
         <div class="col-lg-12" style="text-align: center;"> 
           
                 <textarea
-                style="width: 450px;
+
+                style="width: 280px;
                         height: 100px;
                         text-align: justify;"
                 readonly
@@ -43,7 +49,7 @@
         <div class="col-lg-12" style="text-align: center; margin-top: 20px;"> 
          
                 <button type="button" class="btn btn-primary btn-sm" id="generate">Generate Password</button>
-                <button type="button" class="btn btn-secondary btn-sm" style="background-color:#4caf50; border-color:#4caf50;">Copy to clipboard</button>
+                <button type="button" class="btn btn-secondary btn-sm" id="copyClipboard" style="background-color:#4caf50; border-color:#4caf50;">Copy to clipboard</button>
 
 
             <!-- <button id="generate" style="margin: 20px; "> -->
