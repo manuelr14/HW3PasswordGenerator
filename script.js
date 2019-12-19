@@ -141,10 +141,7 @@ function getRamdomspecial(){
           var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+lower[Math.floor(Math.random()*lower.length)];
     
         }
-             
-              
-           
-            console.log(passwordf)
+           console.log(passwordf)
               var pnumero =  passwordf.substring(0, Passwordlenght);
             
               console.log(pnumero);
@@ -185,13 +182,12 @@ function getRamdomspecial(){
           var passwordf= passwordf+lower[Math.floor(Math.random()*lower.length)]+number[Math.floor(Math.random()*number.length)];
     
         }
-             
-              
-           
             console.log(passwordf)
               var pnumero =  passwordf.substring(0, Passwordlenght);
             
               console.log(pnumero);
+
+              display.textContent=pnumero;
             
       } else if (UPPERdata === false && lowerData === true  && numberData === false && symbolData === true) {
               
