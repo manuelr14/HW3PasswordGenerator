@@ -41,6 +41,7 @@ function getRamdomspecial(){
         var numberData = confirm("do you want numbers");
         var symbolData= confirm("do you want special characteres?");
 
+    
       
 
 
@@ -51,7 +52,7 @@ function getRamdomspecial(){
     }
 
 
- var passwordf="";
+      var passwordf="";
 
     if ( UPPERdata === true && lowerData === true && numberData === true && symbolData === true) {
   
@@ -277,9 +278,9 @@ function getRamdomspecial(){
               console.log(pnumero);
       } else {
     
-          alert("no password");
+          alert("you have to check at least one option!");
           console.log("no password");
-          display.textContent="no pasword";
+          
       };
  
   }); 
