@@ -31,12 +31,27 @@ function getRamdomspecial(){
 
   generateBtn.addEventListener("click", function () {
 
-    var Passwordlenght = prompt("welcome to the password generator, how many characters do you want?");
-    var UPPERdata = confirm("do you want upper case?");
-    var lowerData = confirm("do you want lower case");
-    var numberData = confirm("do you want numbers");
-    var symbolData= confirm("do you want special characteres?");
-    var passwordf= "";
+    var Passwordlenght = prompt("welcome to the password generator, pick a characther betwen 8 -1 28?");
+    
+    if( Passwordlenght >= 8 && Passwordlenght <= 128) {
+
+      var UPPERdata = confirm("do you want upper case?");
+
+        var lowerData = confirm("do you want lower case");
+        var numberData = confirm("do you want numbers");
+        var symbolData= confirm("do you want special characteres?");
+
+      
+
+
+    } else {
+
+      alert("wrong entry");
+
+    }
+
+
+ var passwordf="";
 
     if ( UPPERdata === true && lowerData === true && numberData === true && symbolData === true) {
   
@@ -264,7 +279,7 @@ function getRamdomspecial(){
     
           alert("no password");
           console.log("no password");
-          display.textContent=12345;
+          display.textContent="no pasword";
       };
  
   }); 
