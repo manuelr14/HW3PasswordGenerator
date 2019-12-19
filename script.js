@@ -7,27 +7,6 @@ var CopyBtn = document.querySelector ("#generate");
 var display = document.querySelector("#password");
 
 
-function getRamdomUPPER(){
-return UPPER[Math.floor(Math.random() * UPPER.length)];
-
-} 
-
-function getRamdomlower(){
-    return lower[Math.floor(Math.random() * lower.length)];
-    
-} 
-
-function getRamdomnumber(){
-    return number[Math.floor(Math.random() * number.length)];
-    
-} 
-
-function getRamdomspecial(){
-        return special[Math.floor(Math.random() * special.length)];
-        
-} 
-
-
 
 
   generateBtn.addEventListener("click", function () {
@@ -37,12 +16,10 @@ function getRamdomspecial(){
     if( Passwordlenght >= 8 && Passwordlenght <= 128) {
 
       var UPPERdata = confirm("do you want upper case?");
+      var lowerData = confirm("do you want lower case?");
+      var numberData = confirm("do you want numbers?");
+      var symbolData= confirm("do you want special characteres?");
 
-        var lowerData = confirm("do you want lower case?");
-        var numberData = confirm("do you want numbers?");
-        var symbolData= confirm("do you want special characteres?");
-
-    
       
 
 
@@ -273,6 +250,8 @@ function getRamdomspecial(){
             
               console.log(pnumero);
               display.textContent=pnumero; 
+
+           
       } else {
     
           alert("you have to pick between 8 -128 chacters and check at least one character type!");
@@ -280,7 +259,7 @@ function getRamdomspecial(){
           
       };
   }); 
-  
+
   
  
 
