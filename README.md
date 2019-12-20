@@ -6,7 +6,7 @@ A password generator is a software tool that creates random or passwords for use
 
 here is the link to see the password generator https://manuelr14.github.io/HW3PasswordGenerator/
 
-
+![](Screen-Shot.PNG)
 
 
 
