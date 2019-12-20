@@ -4,7 +4,7 @@ var number = [0,1,2,3,4,5,6,7,8,9];
 var special = [ "!","#","$","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[","]","^","_","{","|",",","}","~"]
 var generateBtn = document.querySelector ("#generate");
 var CopyBtn = document.querySelector ("#generate");
-var display = document.querySelector("#password");
+var display = document.getElementById("password").placeholder;
 
 
 
@@ -27,7 +27,8 @@ var display = document.querySelector("#password");
     }
    var passwordf="";
 
-    if ( UPPERdata === true && lowerData === true && numberData === true && symbolData === true) {
+ 
+   if ( UPPERdata === true && lowerData === true && numberData === true && symbolData === true) {
   
       for (var i=0 ; i <= Passwordlenght; i++){
     
@@ -35,11 +36,12 @@ var display = document.querySelector("#password");
     
       }
             
-          console.log(passwordf)
+          console.log(passwordf);
             var pnumero =  passwordf.substring(0, Passwordlenght);
           
-            console.log(pnumero);
-          display.textContent=pnumero;
+          console.log(pnumero);
+          
+          document.querySelector("#password").placeholder=pnumero;
         
             
       } else if (UPPERdata === true  && lowerData === true  && numberData === true  && symbolData === false) {
@@ -49,14 +51,13 @@ var display = document.querySelector("#password");
           var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+lower[Math.floor(Math.random()*lower.length)]+number[Math.floor(Math.random()*number.length)];
     
         }
-             
-              
-           
-            console.log(passwordf)
-              var pnumero =  passwordf.substring(0, Passwordlenght);
+    console.log(passwordf);
+        
+        var pnumero =  passwordf.substring(0, Passwordlenght);
             
-              console.log(pnumero);
-              display.textContent=pnumero;
+    console.log(pnumero);
+              
+      document.querySelector("#password").placeholder=pnumero;
       
     
       } else if (UPPERdata === true  && lowerData === true  && numberData === false && symbolData === true) {
@@ -66,14 +67,14 @@ var display = document.querySelector("#password");
           var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+lower[Math.floor(Math.random()*lower.length)]+special[Math.floor(Math.random()*special.length)];
     
         }
-             
-              
-           
-            console.log(passwordf)
-              var pnumero =  passwordf.substring(0, Passwordlenght);
+    console.log(passwordf);
+        
+        var pnumero =  passwordf.substring(0, Passwordlenght);
             
-              console.log(pnumero);
-              display.textContent=pnumero;
+    console.log(pnumero);
+              
+      document.querySelector("#password").placeholder=pnumero;
+      
                 
       } else if (UPPERdata === true  && lowerData === false && numberData === true  && symbolData === true) {
           
@@ -82,14 +83,14 @@ var display = document.querySelector("#password");
           var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+number[Math.floor(Math.random()*number.length)]+special[Math.floor(Math.random()*special.length)];
     
         }
-             
-              
-           
-            console.log(passwordf)
-              var pnumero =  passwordf.substring(0, Passwordlenght);
+        console.log(passwordf);
+        
+        var pnumero =  passwordf.substring(0, Passwordlenght);
             
-              console.log(pnumero);
-              display.textContent=pnumero;
+    console.log(pnumero);
+              
+      document.querySelector("#password").placeholder=pnumero;
+      
           
       } else if (UPPERdata === false && lowerData === true  && numberData === true  && symbolData === true) {
         for (var i=0 ; i <= Passwordlenght; i++){
@@ -97,14 +98,14 @@ var display = document.querySelector("#password");
           var passwordf= passwordf+lower[Math.floor(Math.random()*lower.length)]+number[Math.floor(Math.random()*number.length)]+special[Math.floor(Math.random()*special.length)];
     
         }
-             
-              
-           
-            console.log(passwordf)
-              var pnumero =  passwordf.substring(0, Passwordlenght);
+        console.log(passwordf);
+        
+        var pnumero =  passwordf.substring(0, Passwordlenght);
             
-              console.log(pnumero);
-              display.textContent=pnumero;
+    console.log(pnumero);
+              
+      document.querySelector("#password").placeholder=pnumero;
+      
         
       } else if (UPPERdata === true  && lowerData === true  && numberData === false && symbolData === false) {
           
@@ -113,12 +114,14 @@ var display = document.querySelector("#password");
           var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+lower[Math.floor(Math.random()*lower.length)];
     
         }
-           console.log(passwordf)
-              var pnumero =  passwordf.substring(0, Passwordlenght);
+        console.log(passwordf);
+        
+        var pnumero =  passwordf.substring(0, Passwordlenght);
             
-              console.log(pnumero);
-              display.textContent=pnumero; 
-                    
+    console.log(pnumero);
+              
+      document.querySelector("#password").placeholder=pnumero;
+      
       } else if (UPPERdata === true  && lowerData === false && numberData === true  && symbolData === false) {
               
         for (var i=0 ; i <= Passwordlenght; i++){
@@ -126,12 +129,14 @@ var display = document.querySelector("#password");
           var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+number[Math.floor(Math.random()*number.length)];
     
         }
-             console.log(passwordf)
-              var pnumero =  passwordf.substring(0, Passwordlenght);
+        console.log(passwordf);
+        
+        var pnumero =  passwordf.substring(0, Passwordlenght);
             
-              console.log(pnumero);
-              display.textContent=pnumero;
+    console.log(pnumero);
               
+      document.querySelector("#password").placeholder=pnumero;
+      
       } else if (UPPERdata === true  && lowerData === false && numberData === false && symbolData === true) {
           
         for (var i=0 ; i <= Passwordlenght; i++){
@@ -139,13 +144,14 @@ var display = document.querySelector("#password");
           var passwordf= passwordf+UPPER[Math.floor(Math.random()*UPPER.length)]+special[Math.floor(Math.random()*special.length)];
     
         }
-          
-            console.log(passwordf)
-              var pnumero =  passwordf.substring(0, Passwordlenght);
+        console.log(passwordf);
+        
+        var pnumero =  passwordf.substring(0, Passwordlenght);
             
-              console.log(pnumero);
-    
-              display.textContent=pnumero;
+    console.log(pnumero);
+              
+      document.querySelector("#password").placeholder=pnumero;
+      
               
       } else if (UPPERdata === false && lowerData === true  && numberData === true  && symbolData === false) {
           
@@ -154,12 +160,14 @@ var display = document.querySelector("#password");
           var passwordf= passwordf+lower[Math.floor(Math.random()*lower.length)]+number[Math.floor(Math.random()*number.length)];
     
         }
-            console.log(passwordf)
-              var pnumero =  passwordf.substring(0, Passwordlenght);
+        console.log(passwordf);
+        
+        var pnumero =  passwordf.substring(0, Passwordlenght);
             
-              console.log(pnumero);
-
-              display.textContent=pnumero;
+    console.log(pnumero);
+              
+      document.querySelector("#password").placeholder=pnumero;
+      
             
       } else if (UPPERdata === false && lowerData === true  && numberData === false && symbolData === true) {
               
@@ -168,14 +176,14 @@ var display = document.querySelector("#password");
           var passwordf= passwordf+lower[Math.floor(Math.random()*lower.length)]+special[Math.floor(Math.random()*special.length)];
     
         }
-          
-            console.log(passwordf)
-              var pnumero =  passwordf.substring(0, Passwordlenght);
+        console.log(passwordf);
+        
+        var pnumero =  passwordf.substring(0, Passwordlenght);
             
-              console.log(pnumero);
-    
-              display.textContent=pnumero;
-                        
+    console.log(pnumero);
+              
+      document.querySelector("#password").placeholder=pnumero;
+      
       } else if (UPPERdata === false && lowerData === false && numberData === true  && symbolData === true) {
                   
         for (var i=0 ; i <= Passwordlenght; i++){
@@ -183,12 +191,14 @@ var display = document.querySelector("#password");
           var passwordf= passwordf+number[Math.floor(Math.random()*number.length)]+special[Math.floor(Math.random()*special.length)];
     
         }
-            console.log(passwordf)
-              var pnumero =  passwordf.substring(0, Passwordlenght);
+        console.log(passwordf);
+        
+        var pnumero =  passwordf.substring(0, Passwordlenght);
             
-              console.log(pnumero);
-    
-              display.textContent=pnumero;
+    console.log(pnumero);
+              
+      document.querySelector("#password").placeholder=pnumero;
+      
     
       } else if (UPPERdata === true  && lowerData === false && numberData === false && symbolData === false) {
             for (var i=0 ; i <= Passwordlenght; i++){
@@ -196,13 +206,14 @@ var display = document.querySelector("#password");
               var passwordf= passwordf+(UPPER[Math.floor(Math.random()*UPPER.length)]);
     
             }
-                console.log(passwordf)
-                  var pnumero =  passwordf.substring(0, Passwordlenght);
+            console.log(passwordf);
+        
+            var pnumero =  passwordf.substring(0, Passwordlenght);
                 
-                  console.log(pnumero);
-    
-                
-              display.textContent=pnumero;  
+        console.log(pnumero);
+                  
+          document.querySelector("#password").placeholder=pnumero;
+           
                   
       } else if (UPPERdata === false && lowerData === true  && numberData === false && symbolData === false) {
               
@@ -211,14 +222,14 @@ var display = document.querySelector("#password");
           var passwordf= passwordf+lower[Math.floor(Math.random()*lower.length)];
     
         }
-             
-              
-           
-            console.log(passwordf)
-              var pnumero =  passwordf.substring(0, Passwordlenght);
+        console.log(passwordf);
+        
+        var pnumero =  passwordf.substring(0, Passwordlenght);
             
-              console.log(pnumero);
-              display.textContent=pnumero; 
+    console.log(pnumero);
+              
+      document.querySelector("#password").placeholder=pnumero;
+      
                 
       } else if (UPPERdata === false && lowerData === false && numberData === true  && symbolData === false) {
                   
@@ -227,11 +238,11 @@ var display = document.querySelector("#password");
           var passwordf= passwordf+number[Math.floor(Math.random()*number.length)];
     
         }
-            console.log(passwordf)
+            console.log(passwordf);
               var pnumero =  passwordf.substring(0, Passwordlenght);
             
               console.log(pnumero);
-              display.textContent=pnumero; 
+              display=pnumero; 
              
       } else if (UPPERdata === false && lowerData === false && numberData === false && symbolData === true) {
                       
@@ -240,12 +251,14 @@ var display = document.querySelector("#password");
           var passwordf= passwordf+special[Math.floor(Math.random()*special.length)];
     
         }
-            console.log(passwordf)
-              var pnumero =  passwordf.substring(0, Passwordlenght);
+        console.log(passwordf);
+        
+        var pnumero =  passwordf.substring(0, Passwordlenght);
             
-              console.log(pnumero);
-              display.textContent=pnumero; 
-
+    console.log(pnumero);
+              
+      document.querySelector("#password").placeholder=pnumero;
+      
            
       } else {
     
@@ -257,4 +270,3 @@ var display = document.querySelector("#password");
 
   
  
-
